@@ -1,0 +1,259 @@
+/**
+ * Theme Name:     Hello Elementor Child
+ * Author:         Elementor Team
+ * Template:       hello-elementor
+ * Text Domain:	   hello-elementor-child
+ * Description:    A plain-vanilla
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.featured-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin-top: 70px;
+}
+
+.featured-img-container .featured-img {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 0;
+}
+
+.featured-img .attachment-post-thumbnail {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    width: 564px !important;
+    height: 495px !important;
+    object-fit: cover;
+}
+
+.elementor-223 .elementor-element.elementor-element-6b6b8ec .menu-item a.hfe-menu-item:hover,
+.elementor-223 .elementor-element.elementor-element-6b6b8ec .sub-menu a.hfe-sub-menu-item:hover,
+.elementor-223 .elementor-element.elementor-element-6b6b8ec .menu-item.current-menu-item a.hfe-menu-item,
+.elementor-223 .elementor-element.elementor-element-6b6b8ec .menu-item a.hfe-menu-item.highlighted,
+.elementor-223 .elementor-element.elementor-element-6b6b8ec .menu-item a.hfe-menu-item:hover {
+    color: black;
+    font-weight: 600;
+
+}
+
+.post-image {
+    position: relative;
+}
+
+.post-image .gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.post-image .image-title {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: white;
+    font-family: "poppins";
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-category {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: white;
+    font-family: "poppins";
+    opacity: 0;
+    pointer-events: none;
+}
+
+.eye-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.post-image:hover .gradient {
+    opacity: 1;
+    pointer-events: unset;
+    transition: all 250ms;
+}
+
+.post-image:hover .image-title {
+    opacity: 1;
+    pointer-events: unset;
+    transition: all 250ms;
+}
+
+.post-image:hover .image-category {
+    opacity: 1;
+    pointer-events: unset;
+    transition: all 250ms;
+}
+
+.post-image:hover .eye-image {
+    opacity: 1;
+    pointer-events: unset;
+    transition: all 250ms;
+}
+
+.lightbox-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.post-image:hover .lightbox-switch {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.lightbox {
+    background-color: rgba(6, 0, 0, 0.932);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    display: none;
+}
+
+.lightbox-image {
+    width: 500px !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lightbox .close {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.lightbox.active {
+    display: block;
+}
+
+#main-filter {
+    background-color: white;
+    border: 1px solid #000;
+    width: 20%;
+    border-radius: unset !important;
+    top: 40px;
+    position: absolute;
+}
+
+#post-format-filter {
+    background-color: white;
+    border: 1px solid #000;
+    width: 20%;
+    border-radius: unset !important;
+    position: absolute;
+    top: 40px;
+    left: 25%;
+}
+
+.new-filter {
+    background-color: white;
+    border: 1px solid #000;
+    width: 20%;
+    border-radius: unset !important;
+    position: absolute;
+    left: 80%;
+}
+
+.p-tag {
+    position: absolute;
+    left: 80% !important;
+    top: 0%;
+}
+
+.p-tag2 {
+    position: absolute;
+    left: 25%;
+    top: 0px;
+}
+
+button.pum-close.popmake-close {
+    display: none;
+}
+
+[type=button],
+[type=submit],
+button {
+    position: absolute;
+    left: 43%;
+    margin-top: 30px !important;
+    background-color: #D8D8D8 !important;
+    border-radius: unset !important;
+    font-family: "space mono" !important;
+    font-size: 200 !important;
+    color: #000 !important;
+    border: unset !important;
+
+}
+
+.elementor-912 .elementor-element.elementor-element-006aba4 .eael-wpforms .wpforms-submit-container .wpforms-submit {
+
+    display: inline-block;
+    left: 0%;
+    width: 155px;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-style: solid !important;
+    border-width: 0px 0px 0px 04px !important;
+    border-color: #000000 !important;
+    border-radius: 0px 0px 0px 0px !important;
+    font-family: "Space Mono", Sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.elementor-912 .elementor-element.elementor-element-006aba4 .eael-wpforms .wpforms-submit-container .wpforms-submit:hover {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .featured-img-container {
+        display: block !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .post-image {
+        margin-bottom: 20px !important;
+    }
+
+    .featured-img .attachment-post-thumbnail {
+        display: inline-block;
+        transform: scale(1.9);
+        object-fit: cover;
+        height: 247px !important;
+        
+    }
+    }

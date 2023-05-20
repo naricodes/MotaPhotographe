@@ -1,0 +1,4 @@
+2023-05-13T13:45:32+00:00 syntax error, unexpected ' ' (T_STRING)
+2023-05-13T13:45:36+00:00 syntax error, unexpected ' ' (T_STRING)
+2023-05-13T13:57:43+00:00 Call to a member function get_queried_object_id() on null
+2023-05-13T13:57:43+00:00 Snippet "Display the post and filter them" (#159) was automatically deactivated due to a fatal error.
